@@ -31,40 +31,59 @@
 </head>
 <body>
 	<div class="container">
-	<div class="row">
-		<div class="col-md-12 col-xs-12">
-			<h1>The Psychic Game</h1>
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<h1>The Psychic Game</h1>
+			</div>
+
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="music">
+					<audio id="sound1" src="assets/music/xmen.mp3" preload="auto"></audio>
+		  			<button onclick="document.getElementById('sound1').play();">
+		  				play music
+		  			</button>
+		  			
+		  			<button onclick="document.getElementById('sound1').pause();">
+		  				pause music
+		  			</button>
+			  	</div>
+			</div>
 		</div>
 
-		<div class="col-md-4">
-			<img id="professorX" src="assets/images/profX.png" alt="Professor X">
+		<div class="row">
+			<div class="col-md-12">
+				<img id="professorX" src="assets/images/profX.png" alt="Professor X">
+			</div>
 		</div>
 
-		<div class="col-md-8" id="gamebox">
-			
-			<h2 id="title">Professor X</h2>
-			
-			<h3 id="directions">Guess what letter I'm thinking of</h3>
-			<!-- insert letter placeholders -->
-			
-			<h3 id="wins">Wins: 0 </h3>
-			<h3 id="winsCount"></h3>
-			<!-- wins count -->
-			
-			<h3 id="losses">Losses: 0 </h3>
-			<h3 id="lossesCount"></h3>
-			<!-- Losses -->
-			
-			<h3 id="guesses">Guesses Remaining: 9</h3>
-			<h3 id="guessesRemaining"></h3>
-			<!-- Guesses remaining -->
+		<div class="row"
+			<div class="col-md-8" id="gamebox">
+				
+				<h2 id="title">Professor X says,"Guess what letter I'm thinking of."</h2>
+				
+				<h4 id="directions">Type in a letter to make a guess.</h4>
+				<!-- insert letter placeholders -->
+				
+				<h3 id="wins">Wins:</h3>
+				<hspan3 id="winsCount"></span>
+				<!-- wins count -->
+				
+				<h3 id="losses">Losses:</h3>
+				<span id="lossesCount"></span>
+				<!-- Losses -->
+				
+				<h3 id="guesses">Guesses Remaining:</h3>
+				<span id="guessesRemaining"></span>
+				<!-- Guesses remaining -->
 
-			<h3 id="userGuesses">Your guesses so far: </h3>
-			<h3 id="userGuessesArray"></h3>
-			<!-- List letters already guessed - array -->
-
+				<h3 id="userGuesses">Your guesses so far: </h3>
+				<h3 id="lettersGuessed"></h3>
+				<!-- List letters already guessed - array -->
+			</div>
+			<!-- class="col-md-6" id="gamebox" -->
 		</div>
-		<!-- class="col-md-6" id="gamebox" -->
+
 	</div>
 	<!-- class="container" -->
 </body>

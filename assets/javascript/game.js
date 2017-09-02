@@ -20,28 +20,54 @@ var winsCount = 0;
 	var computerChoice = letters[Math.floor(Math.random() * letters.length)];
 		console.log(computerChoice);
 
+
+// user presses key to guess letter
+
 	document.onkeyup = function(event) {
 
 	var lettersGuessed = event.key;
 		console.log(lettersGuessed);
 
-	var displayGuess = "Your guesses so far: " + (lettersGuessed);
+// letterGuesses gets placed into empty array
+	var lettersArray = [];
+	 var UserGuesses = lettersArray.unshift(lettersGuessed);
+		console.log(lettersArray);
 
-		document.querySelector("#userGuesses").innerHTML = displayGuess; 
+	document.getElementById('lettersGuessed').innerHTML = lettersArray;
+
+// letterGuessed is displayed in console and html
+	for (var i = 0; i < lettersArray.length; i++) {
+        console.log(lettersArray[i]);
+    }
+
+	  // document.querySelector("#lettersGuessed").innerHTML = lettersArray[i];
 
 // If userPick == computerChoice
+	for (i = 0; i < 9; i++){
+
+	}
+
 		if (lettersGuessed == computerChoice) {
 		// Then winsCount +1
-		winsCount = + 1;
-			console.log(winsCount);
+			winsCount = + 1;
+				console.log(winsCount);
+				//break loop
 		}
+
 		else {
-			lossesCount = + 1;
-				console.log(lossesCount);
+			guessesRemaining = - 1;
+				console.log(guessesRemaining);
+			if (guessesRemaining == 0){
+				guessesRemaining = 9;
+				//break loop
+			}
+			
 		}
-		
 
 
+// var html = ('guessesRemaining') + guessesRemaining;
+// var html = ('winsCount') + winsCount;
+// var html = ('lossesCount') + lossesCount;
 
 
 
