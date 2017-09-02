@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>
+		The Psychic Game
+	</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon_icon.ico" />
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!--JS CDN -->
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<h1>The Psychic Game</h1>
+		</div>
+
+		<div class="col-md-4">
+			<img class="image" src="assets/images/profX.png" alt="images">
+		</div>
+
+		<div class="col-md-4" id="gamebox">
+			
+			<h2 id="title">Professor X</h2>
+			
+			<h3 id="directions">Guess what letter I'm thinking of</h3>
+			<!-- insert letter placeholders -->
+			
+			<h3 id="wins">wins: </h3>
+			<h3 id="winsCount"></h3>
+			<!-- wins count -->
+			
+			<h3 id="losses">Loses: </h3>
+			<h3 id="lossCount"></h3>
+			<!-- Losses -->
+			
+			<h3 id="guesses">Guesses Remaining: </h3>
+			<h3 id="guessesRemaining"></h3>
+			<!-- Guesses remaining -->
+
+			<h3 id="userGuesses">Your guesses so far: </h3>
+			<h3 id="userGuessesArray"></h3>
+			<!-- List letters already guessed - array -->
+
+		</div>
+		<!-- class="col-md-6" id="gamebox" -->
+	</div>
+	<!-- class="container" -->
+</body>
+
+</html>
