@@ -1,8 +1,8 @@
 // Define variables
 
-var winsCount = 0;
-	lossesCount = 0;
-	guessesRemaining = 9;
+	var winsCount = 0;
+		lossesCount = 0;
+		guessesRemaining = 9;
 
 
 
@@ -20,50 +20,30 @@ var winsCount = 0;
 	var computerChoice = letters[Math.floor(Math.random() * letters.length)];
 		console.log(computerChoice);
 
-
 // user presses key to guess letter
+// letterGuesses gets placed into empty array
 
-var lettersArray = [];
+	var lettersArray = [];
 
 	document.onkeyup = function(event) {
 		lettersGuessed = event.key;
 		lettersArray.push(lettersGuessed);
 	
+	// letterGuessed is displayed in console and html
 		console.log(lettersGuessed);
 		console.log(lettersArray);
-	
-	document.getElementById('lettersGuessed').innerHTML = lettersArray;
-
-
-// letterGuesses gets placed into empty array
-
-
-	
-	// lettersArray.push(lettersGuessed);
-	// console.log(lettersArray);
-
-	// while ()
-	 // var UserGuesses = lettersArray.unshift(lettersGuessed);
-		// console.log(lettersArray);
-
-
-// letterGuessed is displayed in console and html
-	// for (var i = 0; i < lettersArray.length; i++) {
- //        // console.log(lettersArray[i]);
- //    }
-	
-	  // document.querySelector("#lettersGuessed").innerHTML = lettersArray[i];
+		
+		document.getElementById('lettersGuessed').innerHTML = lettersArray;
 
 // If userPick == computerChoice
 	
-	// while ()
 		if (lettersGuessed == computerChoice) {
 		// Then winsCount +1
 			winsCount ++;
 			document.getElementById("winsCount").innerHTML = winsCount;
 				console.log(winsCount);
-				//computer chooses new leter
-
+				// if user gets correct answer
+				// then, computer chooses new letter 
 		}
 
 		else {
@@ -73,31 +53,11 @@ var lettersArray = [];
 			if (guessesRemaining == 0){
 				guessesRemaining = 9;
 				lossesCount ++;
-				//computer chooses new leter
-
+				// if user gets correct answer
+				// then, computer chooses new letter
 			}
 		}
-
 	}
-
-
-
-// function someFunction() {
-//     document.getElementById("winsCount").innerHTML = ++winsCount;
-// }
-// var html = ('guessesRemaining') + guessesRemaining;
-// var html = ('winsCount') + winsCount;
-// var html = ('lossesCount') + lossesCount;
-
-
-
-// If onkeyup happens
-
-// guessesRemaining -1 || guessesRemaining == 0
-
-
-// Then computerChoice resets
-// && LossesCount +1 
 
 
 
