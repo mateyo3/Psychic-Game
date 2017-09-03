@@ -23,48 +23,65 @@ var winsCount = 0;
 
 // user presses key to guess letter
 
+var lettersArray = [];
+
 	document.onkeyup = function(event) {
-
-	var lettersGuessed = event.key;
+		lettersGuessed = event.key;
+		lettersArray.push(lettersGuessed);
+	
 		console.log(lettersGuessed);
-
-// letterGuesses gets placed into empty array
-	var lettersArray = [];
-	 var UserGuesses = lettersArray.unshift(lettersGuessed);
 		console.log(lettersArray);
-
+	
 	document.getElementById('lettersGuessed').innerHTML = lettersArray;
 
-// letterGuessed is displayed in console and html
-	for (var i = 0; i < lettersArray.length; i++) {
-        console.log(lettersArray[i]);
-    }
 
+// letterGuesses gets placed into empty array
+
+
+	
+	// lettersArray.push(lettersGuessed);
+	// console.log(lettersArray);
+
+	// while ()
+	 // var UserGuesses = lettersArray.unshift(lettersGuessed);
+		// console.log(lettersArray);
+
+
+// letterGuessed is displayed in console and html
+	// for (var i = 0; i < lettersArray.length; i++) {
+ //        // console.log(lettersArray[i]);
+ //    }
+	
 	  // document.querySelector("#lettersGuessed").innerHTML = lettersArray[i];
 
 // If userPick == computerChoice
-	for (i = 0; i < 9; i++){
-
-	}
-
+	
+	// while ()
 		if (lettersGuessed == computerChoice) {
 		// Then winsCount +1
-			winsCount = + 1;
+			winsCount ++;
+			document.getElementById("winsCount").innerHTML = winsCount;
 				console.log(winsCount);
-				//break loop
 		}
 
 		else {
-			guessesRemaining = - 1;
+			guessesRemaining --;
+			document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
 				console.log(guessesRemaining);
 			if (guessesRemaining == 0){
 				guessesRemaining = 9;
+				lossesCount ++;
 				//break loop
 			}
-			
 		}
 
+	}
 
+
+
+// function someFunction() {
+//     document.getElementById("winsCount").innerHTML = ++winsCount;
+// }
 // var html = ('guessesRemaining') + guessesRemaining;
 // var html = ('winsCount') + winsCount;
 // var html = ('lossesCount') + lossesCount;
@@ -81,5 +98,4 @@ var winsCount = 0;
 
 
 
-	}
 
