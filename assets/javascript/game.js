@@ -62,6 +62,8 @@ var lettersArray = [];
 			winsCount ++;
 			document.getElementById("winsCount").innerHTML = winsCount;
 				console.log(winsCount);
+				//computer chooses new leter
+
 		}
 
 		else {
@@ -71,7 +73,8 @@ var lettersArray = [];
 			if (guessesRemaining == 0){
 				guessesRemaining = 9;
 				lossesCount ++;
-				//break loop
+				//computer chooses new leter
+
 			}
 		}
 
