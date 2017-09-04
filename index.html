@@ -28,6 +28,7 @@
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
+
 </head>
 <body>
 	<div class="container">
@@ -53,36 +54,46 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<img id="professorX" src="assets/images/profX.png" alt="Professor X">
+				<img class="img-responsive" id="professorX" src="assets/images/profX.png" alt="Professor X">
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-12" id="gamebox">
-				
 				<h2 id="title">Professor X says,"Guess what letter I'm thinking of."</h2>
 				
 				<h4 id="directions">Type in a letter to make a guess.</h4>
 				<!-- insert letter placeholders -->
-				
-				<h3 id="wins">Wins:</h3>
-				<h3 id="winsCount">0</h3>
-				<!-- wins count -->
-				
-				<h3 id="losses">Losses:</h3>
-				<h3 id="lossesCount">0</h3>
-				<!-- Losses -->
-				
-				<h3 id="guesses">Guesses Remaining:</h3>
-				<h3 id="guessesRemaining">9</h3>
-				<!-- Guesses remaining -->
-
-				<h3 id="userGuesses">Your guesses so far: </h3>
-				<h3 id="lettersGuessed"></h3>
-				<!-- List letters already guessed - array -->
-
+					<div class="row">
+						<div class="col-md-4">
+							<h3 id="wins">Wins:</h3>
+							<h3 id="winsCount">0</h3>
+							<!-- wins count -->
+						</div>
+						
+						<div class="col-md-4">
+							<h3 id="losses">Losses:</h3>
+							<h3 id="lossesCount">0</h3>
+							<!-- Losses -->
+						</div>
+						
+						<div class="col-md-4">
+							<h3 id="guesses">Guesses Remaining:</h3>
+							<h3 id="guessesRemaining">9</h3>
+							<!-- Guesses remaining -->
+						</div>
+					</div>
+						<div class="row">
+							<div class="col-md-12">	
+								<h3 id="userGuesses">Your guesses so far: </h3>
+								<h3 id="lettersGuessed"></h3>
+								<!-- List letters already guessed - array -->
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<!-- class="col-md-6" id="gamebox" -->
+			<!-- class="col-md-12" id="gamebox" -->
 		</div>
 
 	</div>

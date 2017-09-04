@@ -2,7 +2,7 @@
 Try to guess what letter Professor X is thinking. Type in a letter to see if you're correct. You have 9 chances!
 
 ## Psuedocode
-Embedded on comments that refer to conditions where the game needs to rechoose a random letter, but still keep the wins and loss count.
+Embedded are comments that refer to conditions where the game needs to rechoose a random letter, but still keep the wins and loss count.
 
 ## Getting Started
 Below are instructions on how to clone this repository.
